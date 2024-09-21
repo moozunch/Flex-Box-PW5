@@ -1,0 +1,54 @@
+ display: flex;
+
+justify content untuk mengatur posisi secara horizontal. valuenya:
+1. flex-start: Objek sejajar dengan sisi kiri wadah.
+2. flex-end: Objek sejajar dengan sisi kanan wadah.
+3. center: Objek sejajar di tengah wadah.
+4. space-between: Objek ditampilkan dengan jarak yang sama di antara mereka.
+5. space-around: Objek ditampilkan dengan jarak yang sama di sekitarnya.
+6. space-evenly: Objek ditampilkan dengan jarak yang sama di antara dan di sekitar mereka.
+
+
+Align items untuk mengatur posisi secara vertikal. valuenya:
+
+1. flex-start: Objek sejajar dengan bagian atas wadah.
+2. flex-end : Objek sejajar dengan bagian bawah wadah.
+3. center: Objek sejajar dengan bagian tengah wadah.
+4. baseline: Item ditampilkan di garis dasar wadah.
+5. stretch : Item diregangkan agar sesuai dengan wadah.
+
+
+
+flex-direction untuk mengatur arah item. valuenya:
+1. row: Objek ditempatkan sama dengan arah teks.
+2. row-reverse: Objek ditempatkan berlawanan dengan arah teks.
+3. column: Objek ditempatkan dari atas ke bawah.
+4. column-reverse: Objek ditempatkan dari bawah ke atas.
+
+order untuk mengatur urutan item. Nilai defaultnya adalah 0, dan nilai positif atau negatif dapat digunakan untuk mengubah urutannya.
+
+align-self (mirip align-items) untuk mengatur posisi item secara individual. valuenya:
+1. flex-start: Objek sejajar dengan bagian atas wadah.
+2. flex-end: Objek sejajar dengan bagian bawah wadah.
+3. center: Objek sejajar dengan bagian tengah wadah.
+4. baseline: Item ditampilkan di garis dasar wadah.
+5. stretch: Item diregangkan agar sesuai dengan wadah.
+
+flex-wrap untuk mengatur apakah item harus membelit/berdesakan ketika tidak cukup ruang. valuenya:
+1. nowrap: Semua item akan dimasukkan ke dalam satu baris.
+2. wrap: Item akan dibungkus (berpindah ke baris baru) jika tidak cukup ruang.
+3. wrap-reverse: Item akan dibungkus dalam baris terbalik.
+
+
+Dua properti flex-direction dan flex-wrap sering digunakan bersamaan shorthand properti flex-flow dibuat untuk menggabungkan keduanya. Shorthand properti ini menerima nilai dari satu dari dua properti terpisah oleh jarak/spasi. (lihat perbedaan dan persamaan nya di flex19 dan flex20)
+
+
+PAra katak tersebar di seluruh kolam, tetap ada beberapa lilypads diatas. Kamu dapat gunakan align-content untuk mengatur beberapa baris untuk memberi jarak dari masing-masing. Properti ini memiliki nilai:
+
+flex-start: Baris ini mengumpulkan pada wadah bagian atas.
+flex-end: Baris dikemas di bagian bawah wadah.
+center: Baris dikemas di pusat vertikal wadah.
+space-between: Baris ditampilkan dengan jarak sesuai diantara mereka.
+space-around: baris ditampilkan dengan jarak yang sama diantara mereka.
+stretch: Baris di tarik untuk menyesuaikan jarak wadah.
+Ini mungkin membinggungkan, tapi align-content menentukan jarak diantara baris, sedangkan align-items menentukan bagaimana objek secara keseluruhan sejajar di dalam wadah. Ketika ada satu baris, align-content hal ini tidak akan memberikan effect apapun.

@@ -1,0 +1,6 @@
+#pond {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /*Perhatikan bahwa ketika arah flex adalah kolom, justify-content ubah vertical dan align-items dan ke horizontal.*/
+}
